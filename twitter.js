@@ -71,6 +71,7 @@ function BotReply() {
             .replace(/\s+/g, " ");
           console.log(text);
           respondTo(username, text, tweetId);
+	  return;
         }
         tweetQue--;
       }
