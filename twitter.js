@@ -41,7 +41,7 @@ var bot = new Surly({
   brain: options.brain
 });
 
-console.log('Surly started will respond to a tweet every ' + TWEET_FREQUENCY + ' minutes');
+console.log('responding to ' + TWITTER_SEARCH_PHRASE + ' every '  + TWEET_FREQUENCY + ' minutes');
 
 function BotReply() {
 
