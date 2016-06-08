@@ -86,7 +86,7 @@ function BotReply() {
       if (response) {
         var cleanText = response.toLowerCase();
         console.log('Sending: ' + cleanText);
-        Bot.post('statuses/update', {
+        twitterApi.post('statuses/update', {
           status: '@' + username + ' ' + cleanText,
           in_reply_to_status_id: tweetId
         });
