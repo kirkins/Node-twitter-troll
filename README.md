@@ -55,6 +55,12 @@ Or chat over XMPP
 2. `node xmpp.js`
 3. You can't add contacts yet. You'll have to do that yourself somehow.
 
+Or chat over Twitter
+
+1. goto apps.twitter.com get consumer key, consumer secret, access token, and token secret
+2. update credentials in twitter.js
+3. `node twitter.js`
+
 
 Thanks
 ======
