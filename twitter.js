@@ -8,7 +8,7 @@ var TWITTER_CONSUMER_SECRET = '';
 var TWITTER_ACCESS_TOKEN = '';
 var TWITTER_ACCESS_TOKEN_SECRET = '';
 
-var TWITTER_SEARCH_PHRASE = '@p____p'; // make bots handle to respond to incoming tweets
+var TWITTER_SEARCH_PHRASE = '@ph___p'; // make bots handle to respond to incoming tweets
 var TWITTER_LAST_REPLIED = 1; // change to skip all before tweet ID
 var TWEET_FREQUENCY = 7; // check for tweets every X minutes, tweeting too fast can get app restricted
 
