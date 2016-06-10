@@ -61,13 +61,12 @@ function BotReply() {
         if (data.statuses[tweetQue].text.substring(0, 2) != 'RT') { //if tweet is a RT skip
           var tweetId = data.statuses[tweetQue].id_str;
           var username = data.statuses[tweetQue].user.screen_name;
-          // Clean msg for urls and weird chars that break aiml
-          // unfortunatly this means @ and _ are stripped 
+          console.log(data.statuses[tweetQue].text);
+          // clean text for use with AIML
           var text = data.statuses[tweetQue].text
             .replace(/(?:https?|ftp):\/\/[\n\S]+/g, '')
             .replace(/[^\w\s]|_/g, "")
             .replace(/\s+/g, " ");
-          console.log(text);
           respondTo(username, text, tweetId);
 	  return;
         }
