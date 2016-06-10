@@ -65,8 +65,8 @@ function BotReply() {
           // clean text for use with AIML
           var text = data.statuses[tweetQue].text
             .replace(/(?:https?|ftp):\/\/[\n\S]+/g, '')
-            .replace(/[^\w\s]|_/g, "")
-            .replace(/\s+/g, " ");
+            .replace(/_/g, "unn")
+            .replace(/@/g, "att");
           respondTo(username, text, tweetId);
 	  return;
         }
@@ -83,6 +83,8 @@ function BotReply() {
       }
       else if (response) {
         var cleanText = response.toLowerCase();
+        cleanText = cleanText.replace(/unn/g, "_")
+        .replace(/att/g, "@");
         console.log('Sending: ' + cleanText);
         twitterApi.post('statuses/update', {
           status: '@' + username + ' ' + cleanText,
