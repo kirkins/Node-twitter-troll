@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
 // Fill these out with credentials from apps.twitter.com
-// Be careful if Surley2 error message 'fuck knows' can trigger an app ban
-// Avoid this by having a default msg for * at bottom of your aiml for anything that doesn't return a match
 var TWITTER_CONSUMER_KEY = '';
 var TWITTER_CONSUMER_SECRET = '';
 var TWITTER_ACCESS_TOKEN = '';
@@ -84,17 +82,17 @@ function BotReply() {
       if (err) {
         console.log('error: ' + err);
       }
-      if (response) {
+      else if (response) {
         var cleanText = response.toLowerCase();
         console.log('Sending: ' + cleanText);
         twitterApi.post('statuses/update', {
           status: '@' + username + ' ' + cleanText,
           in_reply_to_status_id: tweetId
         });
-      } else {
+        return;
+      }
         console.log('didn\'t return an error or response trying another tweet');
         BotReply();
-      }
     });
   }
 
