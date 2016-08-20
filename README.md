@@ -1,3 +1,5 @@
+Sloppy modification of http://github.com/mrchimp/surly for use with twitter. Set variables in twitter.js to use.
+
 Surly2
 ======
 
