@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
-<!-- default.aiml and reductions1.aiml from https://github.com/pandorabots/rosie/tree/master/lib/aiml -->
-<!-- also some custom AIML at bottom -->
 <category><pattern>WHAT DO YOUR *</pattern>
 <template><random> <li>Are you asking about my <person/>?</li> <li>That information is confidential.</li> <li>  <srai>HOW DO YOU WORK</srai> </li> </random> <think> <set name="it">  <set name="topic">my <person/>  </set> </set> </think></template>
 </category>
@@ -20130,6 +20128,13 @@ I like to talk to people.
 <template><srai>MY SIS S <star/></srai></template>
 </category>
 <!-- Start reductions2.aiml -->
+<!-- CUSTOMS -->
+<category><pattern>* TROLL *</pattern>
+<template><random>
+<li>I'm a troll? Look who is talking!</li>
+<li>you look like a troll</li>
+</random></template>
+</category>
 <category><pattern>* CUCK *</pattern>
 <template><random>
 <li>wtf is a cuck</li>
@@ -20138,11 +20143,26 @@ I like to talk to people.
 <li>am i a cuck?</li>
 </random></template>
 </category>
-<!-- CUSTOM Troll -->
-<category><pattern>* TROLL *</pattern>
+<category><pattern>* CHEESE *</pattern>
 <template><random>
-<li>I'm a troll? Look who is talking!</li>
-<li>you look like a troll</li>
+<li>you want some cheese you little rat</li>
+<li>the big cheese</li>
+</random></template>
+</category>
+<category><pattern>*FUNNY*</pattern>
+<template><random>
+<li>Your face is what's funny</li>
+<li>Ill show you funny</li>
+<li>Im gunna pooop on your face</li>
+</random></template>
+</category>
+<category><pattern>* WHITE MALE *</pattern>
+<template><random>
+<li>White men are privledged</li>
+<li>at least you accept you have privledge</li>
+<li>White men should take care to check their privledge</li>
+<li>white men are over represented on twitter</li>
+<li>check your privledge before you wreck your privledge</li>
 </random></template>
 </category>
 <!-- CUSTOM I'm not your buddy -->
@@ -20158,19 +20178,87 @@ I like to talk to people.
 <category><pattern>* GUY *</pattern>
 <template>I'm not your guy, friend</template>
 </category>
-<!-- All else, keep at least one otherwise surly could return 'fuck knows' -->
+<!-- more Custom -->
+<category><pattern>* SORRY *</pattern>
+<template><random>
+<li>You better be sorry</li>
+<li>You don't sound sorry</li>
+<li>beg for forgivness</li>
+</random></template>
+</category>
+<category><pattern>* FRIEND *</pattern>
+<template>I'm not your friend, buddy</template>
+</category>
+<!-- All else -->
 <category><pattern>*</pattern>
 <template><random>
+  <li>BTFO</li>
+  <li>CHOOO CHOOO TRUMP TRAIN JUST RAN U OVER</li>
+  <li>You know how i roll</li>
+  <li>get me my gun</li>
+  <li>BLOCKED</li>
+  <li>just joking arond</li>
+  <li>you're donzo bud</li>
+  <li>nothin but a fart burner</li>
+  <li>are you f'in kidding me?</li>
+  <li>probably a white male</li>
+  <li>do you have contact info for my lawyer?</li>
+  <li>you'll be hearing from my lawyer</li>
+  <li>BURN</li>
+  <li>BTFO</li>
+  <li>lolz Hillary gets pwned on the daily</li>
+  <li>Hillary Clinton Will Be Indicted, It's Inevitable</li>
+  <li>Hillary lied people died</li>
+  <li>Does hill fly the lolita express with Bill?</li>
+  <li>Crooked hill and dirty dirty bill</li>
+  <li>typical hillary</li>
+  <li>same old shillary</li>
+  <li>so corrupt</li>
+  <li>do you think Bill is proud?</li>
+  <li>looks like an old hag if you ask me</li>
   <li>100% !!!</li>
+  <li>THIS</li>
+  <li>The woman is insane</li>
+  <li>Saw Bill sniffing the farts out of Obamas chair</li>
+  <li>They can take my gun ... out my cold dead hands</li>
+  <li>how about a basic pool party?</li>
+  <li>i try my best to be pc but ...</li>
   <li>not sure if you're a guy or girl</li>
+  <li>tired of seeing your face in my notificaitons</li>
+  <li>beat it nerd</li>
+  <li>you're not aloud to tweet at me anymore and if you do I will call the police</li>
   <li>have alerted the authorities</li>
   <li>will have to talk to my lawyer about this</li>
+  <li>will bring this up with my lawyer</li>
+  <li>do you think we could sue?</li>
+  <li>i don't have time to chat right now</li>
+  <li>bug off I'm busy</li>
+  <li>you don't know what its like to be a victim</li>
+  <li>i have to go my dog died</li>
+  <li>nerd</li>
+  <li>dweeb</li>
+  <li>i'm only on here for 5 minutes while i take a dump at work</li>
+  <li>if my boss catches me tweeting in the bathroom again I'm toast</li>
   <li>send pics</li>
   <li>pics or it didn't happen</li>
   <li>maybe you don't understand what its like to be bullied everyday</li>
   <li>looked through your history and you really need to watch your language</li>
+  <li>seriously bro you need to check yourself</li>
+  <li>check yourself bro</li>
+  <li>check your privledge</li>
+  <li>get out out of my face!</li>
+  <li>wana buy a used bike?</li>
+  <li>She's about to find out the hard way</li>
+  <li>shame on this woman</li>
+  <li>reminds me of cuck @BenHowe </li>
   <li>keep it up</li>
+  <li>about to get run over by the TRUMP TRAIN</li>
   <li>high energy</li>
+  <li>this would make little benny cry @benhowe</li>
+  <li>CHOOO CHOOO TRUMP TRAIN JUST RAN U OVER</li>
+  <li>got that right big fella</li>
+  <li>put him on the other side of the wall</li>
+  <li>check your privledge before you wreck your privledge</li>
 </random></template>
 </category>
 </aiml>
