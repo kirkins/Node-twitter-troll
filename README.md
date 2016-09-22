@@ -21,6 +21,17 @@ Config
 
 Config file is found in the config folder. You'll need to add your own Twitter credentials which you can generate at http://apps.twitter.com
 
+The AIML which generates responses can be found in 'data/aiml/mega.aiml'. At the very bottom you will find an AIML tag that looks like this:
+
+<category><pattern>*</pattern>
+<template><random>
+<li>...</li>
+...
+</random></template>
+</category>
+
+When a message doesn't match to any of the AIML contained in this project (which was compiled from [Rosie](https://github.com/pandorabots/rosie/tree/master/lib/aiml) then we use one of several random responses related to our search term (defined in the config file).
+
 Usage
 =====
 
