@@ -32,7 +32,7 @@ The AIML which generates responses can be found in 'data/aiml/mega.aiml'. At the
 </category>
 ```
 
-When a message doesn't match to any of the AIML contained in this project (which was compiled from [Rosie](https://github.com/pandorabots/rosie/tree/master/lib/aiml) then we use one of several random responses related to our search term (defined in the config file).
+When a message doesn't match to any of the AIML contained in this project then we use one of several random responses related to our search term (defined in the config file).
 
 Usage
 =====
@@ -46,3 +46,4 @@ Thanks
 * [MrChimp](http://www.github.com/surly2), creator of Surly2 library used by this bot.
 * [Richard Wallace](http://www.alicebot.org/bios/richardwallace.html), creator of AIML and AliceBot.
 * Noel Bush, author of the well written, if jargon-dense, [AIML v1.0.1 spec](http://www.alicebot.org/TR/2001/WD-aiml/).
+* [Rosie](https://github.com/pandorabots/rosie/tree/master/lib/aiml
