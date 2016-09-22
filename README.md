@@ -46,4 +46,4 @@ Thanks
 * [MrChimp](http://www.github.com/surly2), creator of Surly2 library used by this bot.
 * [Richard Wallace](http://www.alicebot.org/bios/richardwallace.html), creator of AIML and AliceBot.
 * Noel Bush, author of the well written, if jargon-dense, [AIML v1.0.1 spec](http://www.alicebot.org/TR/2001/WD-aiml/).
-* [Rosie](https://github.com/pandorabots/rosie/tree/master/lib/aiml
+* [Rosie](https://github.com/pandorabots/rosie/tree/master/lib/aiml)
