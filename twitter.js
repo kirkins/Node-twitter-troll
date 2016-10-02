@@ -1,5 +1,15 @@
 // See config file for values needed on setup
 const config = require('./config/config');
+
+// If not provided a search term by user thorough an error
+var searchTerm;
+if(process.argv[2]){
+  searchTerm = process.argv[2];
+} else {
+  console.log("Error: please provide query");
+  process.exit();
+}
+
 const Twit = require('twit');
 
 var Bot = new Twit({
@@ -34,7 +44,7 @@ console.log('Surly started will respond to a tweet every ' + config.TWEET_FREQUE
 function BotReply() {
 
   var query = {
-    q: config.TWITTER_SEARCH_PHRASE,
+    q: searchTerm,
     count: 100,
     result_type: "recent",
     since_id: config.TWITTER_LAST_REPLIED
